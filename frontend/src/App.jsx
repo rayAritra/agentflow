@@ -33,7 +33,7 @@ function App() {
         }>
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="new-mission" element={<NewMissionPage />} />
+          <Route path="missions/new" element={<NewMissionPage />} />
           <Route path="mission/:id" element={<MissionPage />} />
         </Route>
       </Routes>
