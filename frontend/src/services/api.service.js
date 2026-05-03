@@ -3,7 +3,7 @@ import { useAuthStore } from '../store/auth.store';
 import toast from 'react-hot-toast';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://agentflow-o1f0.onrender.com/api' : 'http://localhost:5001/api'),
 });
 
 // Add a request interceptor to inject token
